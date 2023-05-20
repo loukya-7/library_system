@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Library System</title>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="left-link">
+        <a href="#Library System">Library System</a>
+      </div>
+      <div class="right-links">
+        <a href="#books">Books</a>
+        <a href="#register">Register</a>
+        <a href="#Contact Us">Contact Us</a>
+        <a href="#Logout">Logout</a>
+      </div>
+    </nav>
+  </div>
+  
+<div id="books">
+  <h2>Books</h2>
+  <table border="1" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Book ID</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Availability</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>
+          <table>
+              <tr>
+                <td><a href="#">Power of the Machine</a>
+                <table border="1" cellspacing="0">
+                    <tr>
+                <td>Publication Date:2005
+                </tr>
+                    <tr>
+                    <td>Page count:250</td>
+                    </tr>
+                    <td>ISBN:123-4567890123</td>
+                </table>
+            </table>
+        </td>
+        <td>M.G. Kohli</td>
+        <td>Gen 1</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>
+          <table>
+              <tr>
+                <td><a href="#">Hidden Treasure Inside You</a>
+                <table border="1" cellspacing="0">
+                    <tr>
+                <td>Publication Date:2005
+                </tr>
+                    <tr>
+                    <td>Page count:300</td>
+                    </tr>
+                    <td>ISBN:123-4567890456</td>
+                </table>
+            </table>
+        
+        </td>
+        <td>G. Vyas</td>
+        <td>Gen 2</td>
+        <td>Not Available</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>
+          <table>
+              <tr>
+                <td><a href="#">History of The Fort</a>
+                <table border="1" cellspacing="0">
+                    <tr>
+                <td>Publication Date:2010
+                </tr>
+                    <tr>
+                    <td>Page count:350</td>
+                    </tr>
+                    <td>ISBN:123-4567890789</td>
+                </table>
+            </table>
+        </td>
+        <td>Ved Pralay</td>
+        <td>Gen 3</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>
+          <table>
+              <tr>
+                <td><a href="#">Rich Man</a>
+                <table border="1" cellspacing="0">
+                    <tr>
+                <td>Publication Date:2015
+                </tr>
+                    <tr>
+                    <td>Page count:300</td>
+                    </tr>
+                    <td>ISBN:123-4567890900</td>
+                </table>
+            </table>
+        </td>
+        <td>R. Kapoor</td>
+        <td>Gen 4</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>
+          <table>
+              <tr>
+                <td><a href="#">The Monk</a>
+                <table border="1" cellspacing="0">
+                    <tr>
+                <td>Publication Date:2020
+                </tr>
+                    <tr>
+                    <td>Page count:407</td>
+                    </tr>
+                    <td>ISBN:123-4567890864</td>
+                </table>
+            </table>
+        </td>
+        <td>I.M. Sadhu</td>
+        <td>Gen 5</td>
+        <td>Not Available</td>
+      </tr>
+    </tbody>
+  </table><br>
+</div>
+<div id="register">
+    <h2>Register</h2><br>
+    <form id="registrationForm" method="post">
+      <table>
+        <tr>
+          <td><label for="firstName">First Name*:</label></td>
+          <td><input type="text" id="firstName" name="firstName" size="50" required></td>
+        </tr>
+        <tr>
+          <td><label for="lastName">Last Name*:</label></td>
+          <td><input type="text" id="lastName" name="lastName" size="50" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email*:</label></td>
+          <td> <input type="email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"  name="email" id="email"></td>
+        </tr>
+        <tr>
+          <td><label for="dob">Date of Birth*:</label></td>
+          <td><input type="date" id="dob" name="dob" required></td>
+        </tr>
+        <tr>
+          <td><label for="age">Age*:</label></td>
+          <td><input type="number" id="age" name="age" min="5" max="100" size="50" required></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password*:</label></td>
+          <td><input type="password" id="password" name="password" size="50" required></td>
+        </tr>
+        <tr>
+          <td><label for="confirmPassword">Confirm Password*:</label></td>
+          <td><input type="password" id="confirmPassword" name="confirmPassword" size="50" required></td>
+        </tr>
+      </table>
+      <button type="submit">Register</button>
+    </form>
+    
+  </div>
+</body>
+</html>
